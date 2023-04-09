@@ -1,32 +1,3 @@
-<!DOCTYPE html>
-<html>
-<head>
-<title>Man Utd Store</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" href="store.css">
-</head>
-<body>
-<nav class="navbar navbar-expand-md navbar-dark bg-dark mb-4">
-<a class="navbar-brand" href="#">Man Utd Store</a>
-<div class="ml-auto cart-container">
-<img src="https://cdn-icons-png.flaticon.com/512/263/263142.png" alt="Shopping Cart" class="cart-icon">
-<span class="badge badge-light" id="cart-count">0</span>
-</div>
-</nav>
-<div class="container">
-<div class="row">
-<div class="col-md-12">
-<h1 class="mb-4">Man Utd Products</h1>
-</div>
-</div>
-<div class="row" id="product-list">
-</div>
-</div>
-<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-<script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
-<script src="store.js"></script>
-<script>
 const cartCount = document.getElementById("cart-count");
 let cart = [];
 
@@ -71,6 +42,3 @@ productList.append(productCard);
 .catch(function(error) {
 console.log(error);
 });
-</script>
-</body>
-</html>
